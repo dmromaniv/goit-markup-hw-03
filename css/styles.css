@@ -38,9 +38,6 @@
 
 .section {
   padding-top: 94px;
-}
-
-.section:last-of-type {
   padding-bottom: 94px;
 }
 
@@ -233,6 +230,10 @@
   margin-right: 30px;
 }
 
+.advantages.section {
+  padding-bottom: 0;
+}
+
 /* SECTION STAGES */
 
 .stages .section-title,
@@ -264,6 +265,8 @@
 }
 
 .team-list .team-title {
+  margin: 0 0 10px 0;
+
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -272,9 +275,15 @@
 }
 
 .team-list .team-desc {
+  margin: 0;
+
   text-align: center;
   line-height: 1.17;
   color: var(--secondary-page-color);
+}
+
+.team-block {
+  padding: 30px 0;
 }
 
 /* POSITION OF TEAM SECTION ELEMENTs  */
@@ -354,15 +363,10 @@
   cursor: pointer;
 }
 
-.filter-btn.all-filter {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-right: 25px;
-  padding-left: 25px;
-}
-
 .filter-item > .filter-btn:hover,
 .filter-item > .filter-btn:focus {
+  padding-right: 25px;
+  padding-left: 25px;
   color: var(--btn-text-color);
   background-color: var(--link-hover-color);
 }
@@ -401,6 +405,7 @@
 .filter-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -416,16 +421,5 @@
 }
 
 .projects-list > .project-item {
-  /* margin-right: 30px;
-  margin-bottom: 30px; */
-
   flex-basis: calc((100% - 90px) / 3);
 }
-
-/* .projects-list > .project-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.projects-list > .project-item:nth-child(-n + 3) {
-  margin-bottom: 0;
-} */
